@@ -1,8 +1,13 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
 trigger:
-- main  # Spécifiez la branche à surveiller pour déclencher le pipeline. Par exemple, "main".
+- main
 
 pool:
-  vmImage: 'Default'  # Spécifiez l'image de la machine virtuelle que vous souhaitez utiliser.
+  vmImage: ubuntu-latest
 
 variables:
   buildConfiguration: 'Release'
@@ -10,5 +15,3 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-
-

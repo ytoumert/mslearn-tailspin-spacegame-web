@@ -3,8 +3,7 @@ trigger:
 
 variables:
   buildConfiguration: 'Release'
-#ddddfdf
-#dsdfsd
+
 stages:
 - stage: 'Build'
   displayName: 'Build the web application'

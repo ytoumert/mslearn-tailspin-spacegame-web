@@ -1,6 +1,6 @@
 trigger:
 - '*'
-#dfdsdf
+#d
 variables:
   buildConfiguration: 'Release'
 
